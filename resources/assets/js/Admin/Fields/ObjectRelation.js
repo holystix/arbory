@@ -28,7 +28,7 @@ export default class ObjectRelation {
         let relational = this.getRelationalElement();
         let relationalItems = relational.find('.item');
 
-        relationalItems.off().on('click', event => {
+        relationalItems.on('click', event => {
             let item = jQuery(event.target);
 
             if (! item.hasClass('item'))
